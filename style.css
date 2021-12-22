@@ -27,7 +27,7 @@ header ul li {
     display: inline-block;
     padding: 5 20;
     /* background-color: black; */
-    border-radius: 5px;
+    
     transition: 0.8s;
    
 }
@@ -37,6 +37,7 @@ header ul li {
 header ul li :hover{
     background-color: black;
     border-radius: 5px;
+    padding: 5 5 5 5 ;
    
 }
 header span a {
@@ -47,4 +48,12 @@ header span a {
 header ul li a {
     color: rgb(246, 246, 248);
     text-decoration: none;
+}
+main{
+    text-align: center;
+    padding-top: 250px;
+}
+main p{
+    font-size: 30px;
+    color :white
 }
