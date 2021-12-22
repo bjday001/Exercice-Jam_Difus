@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #7c48f5, #af56e2);
+}
+header{
+    padding: 50px;
+    font-size: 22px;
+    background: linear-gradient(to right, #af56e2,#7c48f5);
+   
+}
+.reminder{
+    font-size: 30px;
+}
+header span {
+    margin-left: 10px;
+}
+header ul{
+    float: right;
+    list-style: none;
+    
+}
+header ul li {
+    display: inline-block;
+    padding: 5 20;
+    /* background-color: black; */
+    
+    transition: 0.8s;
+   
+}
+/* header ul li:nth-child(1){
+    background-color: black
+} */
+header ul li :hover{
+    background-color: black;
+    border-radius: 5px;
+    padding: 5 5 5 5 ;
+   
+}
+header span a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+header ul li a {
+    color: rgb(246, 246, 248);
+    text-decoration: none;
+}
+main{
+    text-align: center;
+    
+}
+main p{
+    padding-top: 280px;
+    font-size: 50px;
+    color :black
+}
+main h1{
+    padding-top: 50px;
+    font-size: 30px;
+    color :black
+}
+.contact-form{
+    height: 100%;
+    padding-top: 100px;
+    width: 100%;
+}
+.field{
+    width: 20%;
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main form ul li{
+    
+    padding-bottom: 20px;
+}
+main form ul li input{
+    font-size: 20px;
+    border-radius: 5px;
+  
+}
