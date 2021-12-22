@@ -88,3 +88,10 @@ main form ul li input{
     border-radius: 5px;
   
 }
+main p {
+    border-bottom:2.2px solid black;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 3px;
+    }
