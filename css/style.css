@@ -55,7 +55,7 @@ main{
     text-align: center;
     
 }
-main p{
+.home-title{
     padding-top: 280px;
     font-size: 50px;
     color :black
