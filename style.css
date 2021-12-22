@@ -11,6 +11,8 @@ body{
 header{
     padding: 50px;
     font-size: 22px;
+    background: linear-gradient(to right, #af56e2,#7c48f5);
+   
 }
 .reminder{
     font-size: 30px;
@@ -51,9 +53,15 @@ header ul li a {
 }
 main{
     text-align: center;
-    padding-top: 250px;
+    
 }
 main p{
+    padding-top: 280px;
+    font-size: 70px;
+    color :black
+}
+main h1{
+    padding-top: 50px;
     font-size: 30px;
-    color :white
+    color :black
 }
