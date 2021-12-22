@@ -65,3 +65,26 @@ main h1{
     font-size: 30px;
     color :black
 }
+.contact-form{
+    height: 100%;
+    padding-top: 100px;
+    width: 100%;
+}
+.field{
+    width: 20%;
+    margin: auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+main form ul li{
+    
+    padding-bottom: 20px;
+}
+main form ul li input{
+    font-size: 20px;
+    border-radius: 5px;
+  
+}
