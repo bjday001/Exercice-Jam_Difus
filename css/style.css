@@ -95,3 +95,302 @@ main p {
     padding-top: 10px;
     border-radius: 3px;
     }
+    /*  */
+    @media (max-width :1770px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 110px;
+        }
+        .far{
+            font-size: 110px;
+        }
+        
+        header ul li {
+            font-size: 100px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 200px;
+           
+        }
+        
+    }
+
+    @media (max-width :1577px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 110px;
+        }
+        .far{
+            font-size: 110px;
+        }
+        
+        header ul li {
+            font-size: 100px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :1405px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 110px;
+        }
+        .far{
+            font-size: 110px;
+        }
+        
+        header ul li {
+            font-size: 75px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :1120px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 70px;
+        }
+        .far{
+            font-size: 70px;
+        }
+        
+        header ul li {
+            font-size: 55px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :895px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 57px;
+        }
+        .far{
+            font-size: 57px;
+        }
+        
+        header ul li {
+            font-size: 49px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :824px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 53px;
+        }
+        .far{
+            font-size: 53px;
+        }
+        
+        header ul li {
+            font-size: 40px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :727px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 50px;
+        }
+        .far{
+            font-size: 50px;
+        }
+        
+        header ul li {
+            font-size: 35px;
+            padding-top: 40px;
+            padding-left: 100px;
+            padding-right: 70px;
+           
+        }
+        
+    }
+    @media (max-width :668px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 40px;
+        }
+        .far{
+            font-size: 40px;
+        }
+        
+        header ul li {
+            font-size: 28px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 5px;
+           
+        }
+        
+    }
+    @media (max-width :443px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 30px;
+        }
+        .far{
+            font-size: 30px;
+        }
+        
+        header ul li {
+            font-size: 20px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 5px;
+           
+        }
+        
+    }
+    @media (max-width :363px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 22px;
+        }
+        .far{
+            font-size: 22px;
+        }
+        
+        header ul li {
+            font-size: 17px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 5px;
+           
+        }
+        
+    }
+    @media (max-width :320px){
+        
+        header{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .title-page{
+            margin: auto;
+        }
+        header span a{
+            font-size: 15px;
+        }
+        .far{
+            font-size: 15px;
+        }
+        
+        header ul li {
+            font-size: 10px;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 5px;
+           
+        }
+        
+    }
