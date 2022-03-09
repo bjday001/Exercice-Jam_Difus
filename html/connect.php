@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host= mysql-monpensebete.alwaysdata.net; dbname=todolist; charest=utf8';
+$dsn = 'mysql:host= mysql-monpensebete.alwaysdata.net; dbname=monpensebete_bdd; charest=utf8';
 $username = '260376_bdd';
 $password = 'Alwaysdata2022';
 
