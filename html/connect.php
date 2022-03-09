@@ -1,8 +1,8 @@
 <?php
 
-$dsn = 'mysql:host=localhost; dbname=todolist; charest=utf8';
-$username = 'explorateur';
-$password = 'Ereul9Aeng';
+$dsn = 'mysql:host= mysql-monpensebete.alwaysdata.net; dbname=todolist; charest=utf8';
+$username = '260376_bdd';
+$password = 'Alwaysdata2022';
 
 $db = new PDO($dsn, $username, $password);
 
