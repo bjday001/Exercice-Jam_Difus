@@ -116,7 +116,7 @@ require_once './header.php'; ?>
 
 </body>
 </html>
-
+<?php require_once './footer.php'; ?>
 
 
 
