@@ -22,7 +22,6 @@ if (isset($_POST['send'])) {
 
   $addData = $db->prepare("INSERT INTO listedecourse (nom, poids, quantité)
 VALUES('$nom', '$poids', '$qte')");
-//var_dump($addData);
   $addData->execute();
 }
 
@@ -37,16 +36,16 @@ $selectData->execute();
 
 
 //Supprimer un élément de la liste
-if (isset($_POST['remove'])) {
+if (isset($_POST['supprimer'])) {
   $removeList = $db->prepare("DELETE FROM listedecourse WHERE Id= :id ");
-  $getId = $_POST['remove'];
+  $getId = $_POST['supprimer'];
   $removeList->bindParam("id", $getId);
 
   if ($removeList->execute()) {
     echo '<div class=" alert alert-warning alert-dismissible fade show" role="alert"><strong>Supprimer!</strong>
     <button type="button" class="btn-close" data-bs-dismiss="alert" 
     aria-label="Close"></button></div>';
-    header("location:listdecourses.php");
+    header("location:liste-courses.php");
   } else {
     echo '<div class="alert alert-warning" role="alert"> NON Supprimer </div';
   }
@@ -86,9 +85,9 @@ $selectRdv->execute();
 
 
 //Supprimer un Rendez-vous
-if (isset($_POST['remove'])) {
+if (isset($_POST['delete'])) {
   $removeList = $db->prepare("DELETE FROM rdv WHERE Id= :id ");
-  $getId = $_POST['remove'];
+  $getId = $_POST['delete'];
   $removeList->bindParam("id", $getId);
 
   if ($removeList->execute()==true) {
@@ -127,9 +126,9 @@ $selectElement->execute();
 
 
 //Supprimer un élément de la liste
-if (isset($_POST['remove'])) {
+if (isset($_POST['remove_weekend'])) {
   $removeList = $db->prepare("DELETE FROM weekend WHERE Id= :id ");
-  $getId = $_POST['remove'];
+  $getId = $_POST['remove_weekend'];
   $removeList->bindParam("id", $getId);
 
   if ($removeList->execute()) {

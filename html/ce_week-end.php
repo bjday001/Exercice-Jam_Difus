@@ -100,7 +100,7 @@
 <td ><?php echo $listWe['commentaire'];?></td>
 <td><button type="button" class="detail badge btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Détail</button></td> 
 
-<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='remove' value='" . $listWe['id']. "' type='submit'>Supprimer</button>" ;?></td>
+<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='remove_weekend' value='" . $listWe['id']. "' type='submit'>Supprimer</button>" ;?></td>
 
         </tr>
        <?php }?>

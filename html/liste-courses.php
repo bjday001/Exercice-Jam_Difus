@@ -1,8 +1,5 @@
 <?php require './connect.php'; ?> 
 <?php  require_once './header.php'; ?>
-
-
-<body>
    
     <main>
         <h1>Liste de courses</h1>
@@ -10,12 +7,7 @@
         
     </main>
 
-
      <div class="container">
-            <div class="jumbotron">
-            <h1 class="display-4">liste de courses</h1>  
-            <hr class="my-4">
-            </div>
           
               <!-- Button trigger modal -->
               <button type="button" class="badge btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -84,8 +76,7 @@
 <td ><?php echo $listcourses['quantité'];?></td>
 <td><button type="button" class="detail badge btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Détail</button></td> 
 
-<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='remove' value='" . $listcourses['id']. "' type='submit'>Supprimer</button>" ;?></td>
-
+<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='supprimer' value='" . $listcourses['id']. "' type='submit'>Supprimer</button>" ;?></td>
         </tr>
        <?php }?>
 
