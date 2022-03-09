@@ -29,6 +29,7 @@ header ul li {
     display: inline-block;
     padding: 5 20;
     /* background-color: black; */
+    padding-right: 50px;
     
     transition: 0.8s;
    
@@ -464,3 +465,13 @@ main p {
     }
         
 }
+
+.container-footer{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    margin-top: 300px;
+    position: absolute;
+}
+
