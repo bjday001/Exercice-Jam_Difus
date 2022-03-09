@@ -147,7 +147,7 @@ if (isset($_POST['remove_weekend'])) {
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 
-// Ajouter une tache à faire (à ne pas oublier)
+// Ajouter une tache à faire (todolist)
 if (isset($_POST['ajouter'])) {
   $nom = $_POST['nom'];
   $commentaire = $_POST['commentaire'];
@@ -163,9 +163,9 @@ $selectTask->execute();
 
 
 //Remove
-if (isset($_POST['remove'])) {
+if (isset($_POST['remove_todolist'])) {
   $removeList = $db->prepare("DELETE FROM todolist WHERE Id= :id ");
-  $getId = $_POST['remove'];
+  $getId = $_POST['remove_todolist'];
   $removeList->bindParam("id", $getId);
 
   if ($removeList->execute()) {
@@ -202,9 +202,9 @@ $selectDiner->execute();
 
 
 //Remove
-if (isset($_POST['remove'])) {
+if (isset($_POST['remove_diner'])) {
   $removeList = $db->prepare("DELETE FROM diner WHERE Id= :id ");
-  $getId = $_POST['remove'];
+  $getId = $_POST['remove_diner'];
   $removeList->bindParam("id", $getId);
 
   if ($removeList->execute()) {

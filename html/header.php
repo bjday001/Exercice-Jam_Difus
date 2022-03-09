@@ -23,7 +23,6 @@
             <li> <a href="/html/liste-courses.php">Liste Courses</a></li>
             <li> <a href="/html/rdv.php">Rdv importants</a></li>
             <li> <a href="/html/ce_week-end.php">On fait quoi Ce week-end</a></li>
-            <li> <a href="/html/ne_pas_oublier.php">A ne pas Oublier</a></li>
             <li> <a href="/html/todolist.php">To do list</a></li>
             <li> <a href="/html/repas_du_soir.php">On mange quoi ce soir</a></li>
             <li> <a href="/html/contact.php">Contact</a></li>
