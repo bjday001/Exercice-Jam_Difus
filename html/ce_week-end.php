@@ -1,7 +1,6 @@
 <?php require './connect.php';
 require_once './header.php'; ?>
 
-<body>
     <main>
         <h1>Programme du week-end </h1>
         <p><!-- trait horizontal noir --></p>

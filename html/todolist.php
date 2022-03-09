@@ -1,8 +1,6 @@
 <?php  require './connect.php'; 
 require_once './header.php'; ?>
 
-
-<body>
     <main>
         <h1>Todolist</h1>
         <p><!-- trait horizontal noir --></p>
