@@ -130,7 +130,4 @@ if ((isset($_POST['envoyer'])) && ($addRdvExec == true)) { ?>
 
 <?php }
 ?>
-
-</body>
-
-</html>
+<?php require_once './footer.php'; ?>
