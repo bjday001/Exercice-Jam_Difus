@@ -20,8 +20,9 @@ if (isset($_POST['send'])) {
   $poids = $_POST['poids'];
   $qte = $_POST['qte'];
 
-  $addData = $db->prepare("INSERT INTO listedecourse (nom, poids, qte)
+  $addData = $db->prepare("INSERT INTO listedecourse (nom, poids, quantité)
 VALUES('$nom', '$poids', '$qte')");
+//var_dump($addData);
   $addData->execute();
 }
 

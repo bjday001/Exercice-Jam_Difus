@@ -1,29 +1,19 @@
 <?php require './connect.php'; ?> 
 <?php  require_once './header.php'; ?>
 
-<!-- 
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue !</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>  -->
 
 <body>
+   
     <main>
-        <h1>Programme du week-end </h1>
+        <h1>Liste de courses</h1>
         <p><!-- trait horizontal noir --></p>
+        
     </main>
 
 
-
-
-<div class="container">
+     <div class="container">
             <div class="jumbotron">
+            <h1 class="display-4">liste de courses</h1>  
             <hr class="my-4">
             </div>
           
@@ -49,19 +39,15 @@
                         <input type="text" class="form-control" name="nom"  required>
                       </div>
                       <div class="mb-3">
-                        <label  class="form-label">Date</label>
-                        <input type="text" class="form-control"  name="date" required>
+                        <label  class="form-label">Poids</label>
+                        <input type="text" class="form-control"  name="poids" required>
                       </div>
                       <div class="mb-3">
-                        <label  class="form-label" >Heure</label>
-                        <input type="text" class="form-control"  name="heure" required>
+                        <label  class="form-label" >Quantité</label>
+                        <input type="text" class="form-control"  name="qte" required>
                       </div> 
-                      <div class="mb-3">
-                        <label  class="form-label" >Commentaire</label>
-                        <input type="text" class="form-control"  name="commentaire" required>
-                      </div> 
-
-                      <button  class="btn btn-primary" name="soumettre" >Ajouter</button>
+                      
+                      <button  class="btn btn-primary" name="send" >Ajouter</button>
                     </form>
 
 
@@ -83,9 +69,8 @@
     <tr>
      
       <th scope="col">Nom</th>
-      <th scope="col">Date</th>
-      <th scope="col">Heure</th>
-      <th scope="col">Commentaire</th>
+      <th scope="col">Poids</th>
+      <th scope="col">Quantité  </th>
       <th scope="col">Détails</th>
       <th scope="col">Supprimer</th>
       
@@ -93,14 +78,13 @@
   </thead>
   <tbody >
         <tr>
-<?php foreach($selectElement as $listWe){?>
-<td ><?php echo $listWe['nom'];?></td>
-<td ><?php echo $listWe['date'];?></td>
-<td ><?php echo $listWe['heure'];?></td>
-<td ><?php echo $listWe['commentaire'];?></td>
+<?php foreach($selectData as $listcourses){?>
+<td ><?php echo $listcourses['nom'];?></td>
+<td ><?php echo $listcourses['poids'];?></td>
+<td ><?php echo $listcourses['quantité'];?></td>
 <td><button type="button" class="detail badge btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal">Détail</button></td> 
 
-<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='remove' value='" . $listWe['id']. "' type='submit'>Supprimer</button>" ;?></td>
+<td><?php echo "<form method='POST'> <button class='badge  btn-danger' name ='remove' value='" . $listcourses['id']. "' type='submit'>Supprimer</button>" ;?></td>
 
         </tr>
        <?php }?>
@@ -122,7 +106,7 @@
       </div>
       <div class="modal-body">
 
-           <?php echo $listWe['nom']; ?> 
+           <?php echo $listcourses['nom']; ?> 
        
       </div>
       <div class="modal-footer">
@@ -140,8 +124,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 
-</body>
 
+</body>
 </html>
 
 
