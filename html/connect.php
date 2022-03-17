@@ -11,6 +11,9 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
+$dsn = 'mysql:host= eu-cdbr-west-02.cleardb.net; dbname=heroku_96815065b325b14; charest=utf8'; 
+$username = 'root'; 
+$password = ''; 
 
 $db = new PDO($dsn, $username, $password);
 
