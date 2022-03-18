@@ -8,11 +8,22 @@ $cleardb_password = $cleardb_url["pass"];
 $cleardb_db = substr($cleardb_url["path"], 1);
 $active_group = 'default';
 $query_builder = TRUE;
+
+//ligne 13 à 21 : code pour connecter bdd en local ( ça fonctionne )
 // Connect to DB
-$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+//$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db); comme je n'utilises pas cette connexion je peux supprimer cette ligne
+ 
 
+// $dsn = 'mysql:host= eu-cdbr-west-02.cleardb.net; dbname=heroku_96815065b325b14; charest=utf8'; 
+// $username = 'root'; 
+// $password = ''; 
 
-$db = new PDO($dsn, $username, $password);
+// $db = new PDO($dsn, $username, $password);
+
+// Code proposé par Greg pour connecter ma bdd via le serveur distant (heroku)
+$dsn = "mysql:dbname=" . $cleardb_db . ";host=" . $cleardb_server; // je recrée le dsn à partir des infos de cleardb
+$db = new PDO($dsn, $cleardb_username, $cleardb_password); // j'utilise les infos de cleardb pour configurer la connexion
+
 
 // try {
 
