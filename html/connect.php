@@ -23,9 +23,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 // $db = new PDO($dsn, $username, $password);
 
-// Code proposé par Greg pour connecter ma bdd via le serveur distant (heroku)
-$dsn = "mysql:dbname=" . $cleardb_db . ";host=" . $cleardb_server; // je recrée le dsn à partir des infos de cleardb
-$db = new PDO($dsn, $cleardb_username, $cleardb_password); // j'utilise les infos de cleardb pour configurer la connexion
 
 
 // try {
